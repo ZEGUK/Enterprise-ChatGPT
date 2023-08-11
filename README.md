@@ -1,4 +1,4 @@
-# ChatGPT + Enterprise data with Azure OpenAI
+#  Enterprise ChatGPT with AOAI
 
 This demo is based on [azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo) and using static web app for frontend and Azure functions for the backend API's.
 
