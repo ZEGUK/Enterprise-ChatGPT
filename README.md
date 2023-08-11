@@ -22,7 +22,9 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 
 ### High Level Overview of components
 
-<img src="docs/appcomponents.png" width="600">
+![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/8986e116-6e7a-49f2-a602-19c576f4b9be)
+
+
 
 ## Getting Started
 
@@ -32,7 +34,7 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 
 > **AZURE RESOURCES LIST**
 > ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/730dabb3-ebc5-43cc-a9c7-653a6070ef9e)
-> **Recoomend regions:**
+> **Recommend regions:**
 > AOAI-WestEurope, Others-EastUS2
 
 ### Prerequisites
@@ -80,7 +82,7 @@ Execute the following command, if you don't have any pre-existing Azure services
 4. Run `azd env set AZURE_OPENAI_GPT_DEPLOYMENT {Name of existing GPT deployment}`. Only needed if your ChatGPT deployment is not the default 'davinci'.
 5. Run `azd up`
 
-> NOTE: You can also use existing Search and Storage Accounts. See `./infra/main.parameters.json` for list of environment variables to pass to `azd env set` to configure those existing resources.
+> **NOTE: You can also use existing Search and Storage Accounts. See `./infra/main.parameters.json` for list of environment variables to pass to `azd env set` to configure those existing resources.**
 
 #### Deploying or re-deploying a local clone of the repo
 
