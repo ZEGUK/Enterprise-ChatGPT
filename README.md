@@ -5,14 +5,20 @@ This demo is based on [azure-search-openai-demo](https://github.com/Azure-Sample
 In addition to [azure-search-openai-demo feature](https://github.com/Azure-Samples/azure-search-openai-demo#features) this repo includes:
 
 - Ability to upload file from UI
+  
+  ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/256e5817-e273-4875-bcf2-f24253aa64ff)
+
+  You can view uploaded files in the Azure storage account-containers-content
+  
+  ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/a1c462d2-854d-4751-9eb1-f449458d5ed5)
 - Update to newer version of langchain(0.0.141)
 - Updated rrr ( read-retrieve-read) approach to use pandas dataframe and Bing search lookup in addition to Azure cognitive search
   > Note: update azure function config with `BING_SUBSCRIPTION_KEY` to use. Bing API service deployment is not yet included in the `azd` infra deployment
 
-<img src="docs/uploadscreen.png" width="600">
-
 - Create Azure functions in different programming language e.g. (C#) and easily replace using config file
 - Static web page by default configured with AAD auth
+
+
 
 ### High Level Overview of components
 
@@ -23,6 +29,11 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 > **IMPORTANT:** In order to deploy and run this example, you'll need an **Azure subscription with access enabled for the Azure OpenAI service**. You can request access [here](https://aka.ms/oaiapply). You can also visit [here](https://azure.microsoft.com/free/cognitive-search/) to get some free Azure credits to get you started.
 
 > **AZURE RESOURCE COSTS** by default this sample will create Azure App Service and Azure Cognitive Search resources that have a monthly cost, as well as Form Recognizer resource that has cost per document page. You can switch them to free versions of each of them if you want to avoid this cost by changing the parameters file under the infra folder (though there are some limits to consider; for example, you can have up to 1 free Cognitive Search resource per subscription, and the free Form Recognizer resource only analyzes the first 2 pages of each document.)
+
+> **AZURE RESOURCES LIST**
+> ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/730dabb3-ebc5-43cc-a9c7-653a6070ef9e)
+> **Recoomend regions:**
+> AOAI-WestEurope, Others-EastUS2
 
 ### Prerequisites
 
@@ -50,7 +61,7 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 1. Run `azd login`
 2. Run `az account set --subscription "<your target subscription>"`
 3. Run `azd init`
-   - For the target location, the regions that currently support the models used in this sample are **East US** or **South Central US**. For an up-to-date list of regions and models, check [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models).  Make sure that all the intended services for this deployment have availability in your targeted regions.
+   - For an up-to-date list of regions and models, check [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models).  Make sure that all the intended services for this deployment have availability in your targeted regions.
 
 #### Starting from scratch
 
