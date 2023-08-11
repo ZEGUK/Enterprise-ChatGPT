@@ -17,12 +17,13 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 
 - Create Azure functions in different programming language e.g. (C#) and easily replace using config file
 - Static web page by default configured with AAD auth
-
+- Session hitsory part is in proggress and will be updated lately.
 
 
 ### High Level Overview of components
 
-![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/8986e116-6e7a-49f2-a602-19c576f4b9be)
+![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/d5106a8a-c891-46c9-9411-2df07240c8ff)
+
 
 
 
