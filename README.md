@@ -6,7 +6,8 @@ In addition to [azure-search-openai-demo feature](https://github.com/Azure-Sampl
 
 - Ability to upload file from UI
   
-  ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/256e5817-e273-4875-bcf2-f24253aa64ff)
+ ![image](https://github.com/ZEGUK/Enterprise-ChatGPT/assets/32155786/73cbb991-dbe5-40af-8539-246e0eec3374)
+
 
   You can view uploaded files in the Azure storage account-containers-content
   
